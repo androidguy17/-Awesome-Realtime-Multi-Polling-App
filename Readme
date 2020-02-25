@@ -21,10 +21,13 @@ CREATING A POLL
 ------------------
 
 1) TAP THE "CREATE A POLL" button on the homescreen.
-2) A poll id would be displayed on the screen. THIS YOUR POLLID for your poll, COPY OR NOTEDOWN this id for future reference.
+2) A poll id would be displayed on the screen. THIS IS YOUR POLLID for your poll, COPY OR NOTE IT DOWN this id for future reference.
 3) Tap on Next
 4) A question field will be displayed, Add the questions on this screen with your options
     You can have 2, 3 or 4 options for a particular question.
+    YOU CAN LEAVE THE UNUSED OPTION FIELD AND THEY WILL "NOT" BE REFLECTED ON YOUR POLL
+    
+    
  5) If you want to add another question to your poll then tap on ADD NEW QUESTION and then add your next Question.
  6) After adding all your question , TAP on SUBMIT button.
  7) Then you will be taken to the next screen where your POLLID for this poll Will be displayed again, Note it down IF not done earlier.
