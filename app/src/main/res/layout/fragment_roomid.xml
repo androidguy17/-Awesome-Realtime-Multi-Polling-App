@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/main_background"
+    android:layout_height="match_parent"
+    tools:context=".Creation.roomid">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:id="@+id/a"
+        android:layout_height="150dp"
+        app:lottie_fileName="cycle.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_below="@id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardBackgroundColor="@color/yellow"
+
+        app:cardCornerRadius="20dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:textColor="@android:color/white"
+
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:padding="15dp"
+                android:text="This is your Poll ID"
+                android:textAlignment="center"
+                android:textSize="30sp"
+
+                android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_roomid"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_roomid"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Next"
+            android:background="@drawable/button_background"
+            android:padding="10dp"
+
+            />
+        </RelativeLayout>
+
+        </FrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

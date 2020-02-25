@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Creation.FinalScreen"
+    android:background="@drawable/main_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thank You , Your survey has been successfully uploaded"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:padding="30dp"
+            />
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:id="@+id/below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Poll ID is : "
+            android:layout_below="@id/top"
+            android:padding="30dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="code"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:layout_toRightOf="@id/below"
+            android:layout_below="@id/top"
+            android:layout_marginTop="10dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/tick"
+
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/code"
+
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="tick.json"
+            app:lottie_loop="false" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

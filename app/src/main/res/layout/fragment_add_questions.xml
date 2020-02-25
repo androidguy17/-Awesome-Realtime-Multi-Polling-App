@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Creation.addQuestions">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/yellow"
+        app:cardCornerRadius="15dp"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        app:contentPadding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/qp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/etqp"
+                android:layout_below="@+id/qp"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                />
+
+
+            <TextView
+                android:layout_below="@id/etqp"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textStart"
+
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/etqp2"
+                android:layout_below="@+id/etqp"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:inputType="textMultiLine"
+                />
+
+
+
+            <TextView
+                android:id="@+id/qp3"
+                android:layout_below="@id/etqp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 2"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+
+                android:textSize="20sp"/>
+
+
+            <EditText
+                android:id="@+id/etqp3"
+                android:layout_below="@+id/qp3"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine"
+                />
+
+            <TextView
+                android:id="@+id/qp4"
+                android:layout_below="@id/etqp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 3"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/etqp4"
+                android:layout_below="@+id/qp4"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine"
+                />
+
+            <TextView
+                android:id="@+id/qp5"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/etqp4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 4"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textStart"
+
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/etqp5"
+                android:layout_below="@+id/qp5"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine"
+                />
+
+
+            <Button
+                android:id="@+id/bu_addnew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etqp5"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:text="Add New Question"
+                android:padding="15dp"
+                />
+
+            <Button
+                android:id="@+id/bu_submit"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etqp5"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/bu_addnew"
+                android:text="Submit" />
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+</FrameLayout>

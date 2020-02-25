@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/choose">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.varun.secondtry.play.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_quiz"
+            app:destination="@id/quiz"
+            app:enterAnim="@anim/left_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popUpTo="@+id/choose" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz"
+        android:name="com.varun.secondtry.play.quiz"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <argument
+            android:name="rmid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_quiz_to_endPolling"
+            app:destination="@id/endPolling"
+            app:enterAnim="@anim/left_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popUpTo="@+id/choose" />
+    </fragment>
+    <fragment
+        android:id="@+id/choose"
+        android:name="com.varun.secondtry.choose"
+        android:label="fragment_choose"
+        tools:layout="@layout/fragment_choose" >
+        <action
+            android:id="@+id/action_choose_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/left_right"
+            app:exitAnim="@anim/exit_to_left" />
+        <action
+            android:id="@+id/action_choose_to_roomid"
+            app:destination="@id/roomid"
+            app:enterAnim="@anim/left_right"
+            app:exitAnim="@anim/exit_to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomid"
+        android:name="com.varun.secondtry.Creation.roomid"
+        android:label="fragment_roomid"
+        tools:layout="@layout/fragment_roomid" >
+        <action
+            android:id="@+id/action_roomid_to_addQuestions"
+            app:destination="@id/addQuestions"
+            app:enterAnim="@anim/left_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popUpTo="@+id/choose" />
+    </fragment>
+    <fragment
+        android:id="@+id/addQuestions"
+        android:name="com.varun.secondtry.Creation.addQuestions"
+        android:label="fragment_add_questions"
+        tools:layout="@layout/fragment_add_questions" >
+        <argument
+            android:name="rmid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addQuestions_to_finalScreen"
+            app:destination="@id/finalScreen"
+            app:enterAnim="@anim/left_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popUpTo="@+id/choose" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalScreen"
+        android:name="com.varun.secondtry.Creation.FinalScreen"
+        android:label="fragment_final_screen"
+        tools:layout="@layout/fragment_final_screen" >
+        <argument
+            android:name="rmid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/endPolling"
+        android:name="com.varun.secondtry.play.EndPolling"
+        android:label="fragment_end_polling"
+        tools:layout="@layout/fragment_end_polling" >
+        <action
+            android:id="@+id/action_endPolling_to_loading"
+            app:destination="@id/loading" />
+    </fragment>
+    <fragment
+        android:id="@+id/loading"
+        android:name="com.varun.secondtry.loading"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" >
+        <action
+            android:id="@+id/action_loading_to_choose"
+            app:destination="@id/choose"
+            app:exitAnim="@anim/exit_to_left"
+            app:popUpTo="@+id/choose" />
+    </fragment>
+</navigation>
