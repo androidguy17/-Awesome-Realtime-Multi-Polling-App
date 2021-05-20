@@ -1,6 +1,6 @@
 
 ###
-**Awesome Realtime Multi Polling App**
+**Realtime Multi Polling App**
 ---------------
 
 
